@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sai Yeshwanth Chavala</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Projects</h1>
+    </header>
+
+    <!-- Include Navigation -->
+    <div id="navbar"></div>
+
+    <div class="container">
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <h3>University Projects</h3>
+            <ul>
+                <li>Advanced quantum mechanics, Astrophysics laboratory</li>
+                <li>Nuclear physics data analysis</li>
+                <li>IRAF software for astronomical data analysis</li>
+            </ul>
+            <h3>Bachelor's Projects</h3>
+            <ul>
+                <li>Design and development of Ackberg Mossberg filter</li>
+                <li>Soil moisture sensor R68 in farming</li>
+                <li>Dynamic model of bike using GNSS module</li>
+                <li>MEG-EEG signal processing</li>
+                <li>Wine bottles conveyor belt using SFC language</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sai Yeshwanth Chavala. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Load the navigation bar
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

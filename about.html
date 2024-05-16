@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Sai Yeshwanth Chavala</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+
+    <!-- Include Navigation -->
+    <div id="navbar"></div>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I am a Developer and Astrophysicist with a strong background in data analysis and development. I have a passion for uncovering insights from complex data sets and presenting them. I am skilled in using statistical techniques and programming languages such as Python and R to clean, analyze, and visualize data. I have proven ability to communicate findings to both technical and non-technical audiences. I have experience working with Python for data analysis techniques and I am also skilled in front-end technologies like HTML, CSS, and JavaScript.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sai Yeshwanth Chavala. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Load the navigation bar
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
